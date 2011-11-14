@@ -20,17 +20,10 @@ Getting help
 .. _bug tracker: https://bitbucket.org/wkornewald/djangoappengine/issues
 .. _#django-nonrel IRC channel: irc://irc.freenode.net/django-nonrel
 
-Contents:
+Contents
+========
 
 .. toctree::
    :maxdepth: 2
 
    django-nonrel
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
