@@ -1,10 +1,11 @@
-.. Django on App Engine documentation master file, created by
+.. Django nonrel master file, created by
    sphinx-quickstart on Mon Nov 14 11:22:26 2011.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Django on App Engine
-====================
+=====================   
+Django nonrelational
+=====================
 
 Getting help
 ============
@@ -19,50 +20,12 @@ Getting help
 .. _bug tracker: https://bitbucket.org/wkornewald/djangoappengine/issues
 .. _#django-nonrel IRC channel: irc://irc.freenode.net/django-nonrel
 
-Set up
-======
-
-* Check out x, y, z
-
-Deploying
-=========
-
-* appcfg vs manage.py
-
-Model migration
-===============
-
-* defaults, querying
-
-Query limitations
-=================
-
-* ORing
-
-* Model table inheritance
-
-* Counting over 1000
-
-* Cursors
-
-Extra field types
-=================
-
-* ListFields / SetFields and querying
-
-* DictFields
-
-Uploading to the blobstore
-==========================
-
-* Filetransfers, URL, note about redirects, sample code
-
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
-
+   django-nonrel
 
 Indices and tables
 ==================
