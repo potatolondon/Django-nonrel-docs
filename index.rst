@@ -19,6 +19,44 @@ Getting help
 .. _bug tracker: https://bitbucket.org/wkornewald/djangoappengine/issues
 .. _#django-nonrel IRC channel: irc://irc.freenode.net/django-nonrel
 
+Set up
+======
+
+* Check out x, y, z
+
+Deploying
+=========
+
+* appcfg vs manage.py
+
+Model migration
+===============
+
+* defaults, querying
+
+Query limitations
+=================
+
+* ORing
+
+* Model table inheritance
+
+* Counting over 1000
+
+* Cursors
+
+Extra field types
+=================
+
+* ListFields / SetFields and querying
+
+* DictFields
+
+Uploading to the blobstore
+==========================
+
+* Filetransfers, URL, note about redirects, sample code
+
 Contents:
 
 .. toctree::
