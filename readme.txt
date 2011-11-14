@@ -1,4 +1,4 @@
-This repo contains ReST docs for Django on App Engine. To generate HTML, just do:
+This repo contains ReST docs for Django nonrel. To generate HTML, just do:
 
 $ make html
 
