@@ -224,6 +224,18 @@ Since you can't upload more than 3000 files on App Engine you sometimes have to 
 
 In order to create a zip package simply select a Python package (e.g., a Django app) and zip it. However, keep in mind that only Python modules can be loaded transparently from such a zip file. You can't easily access templates and JavaScript files from a zip package, for example. In order to be able to access the templates you should move the templates into your global "templates" folder within your project before zipping the Python package.
 
+Gotchas
+-------
+
+You can't run multiple manage.py commands at the same time due to
+limitation of the datastore in the App Engine SDK. If you run
+``manage.py shell`` at the same time as ``manage.py
+runserver``, changes made to the datastore in one will not be
+reflected in the other.
+
+This limitation does not apply to ``manage.py test``, since that uses
+its own datastore.
+
 Contribute
 ----------
 
