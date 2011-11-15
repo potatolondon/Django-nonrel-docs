@@ -7,6 +7,14 @@
 Django nonrelational
 =====================
 
+These are the unofficial docs for Django nonrel. Django nonrel is
+developed by `allbuttonspressed`_.
+
+The `source for these docs`_ is available on Github, patches are welcome.
+
+.. _allbuttonspressed: http://www.allbuttonspressed.com/
+.. _source for these docs: https://github.com/potatolondon/Django-nonrel-docs
+
 Getting help
 ============
 
