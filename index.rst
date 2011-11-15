@@ -35,3 +35,4 @@ Contents
    :maxdepth: 2
 
    django-nonrel
+   djangoappengine
