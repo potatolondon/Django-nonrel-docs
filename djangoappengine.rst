@@ -10,12 +10,12 @@ Make sure you've installed the App Engine SDK. On Windows simply use the default
 
 Download the following zip files:
 
-    django-nonrel (or clone it)
-    djangoappengine (or clone it)
-    djangotoolbox (or clone it)
-    django-autoload (or clone it)
-    django-dbindexer (or clone it)
-    django-testapp (or clone it)
+* django-nonrel (or clone it)
+* djangoappengine (or clone it)
+* djangotoolbox (or clone it)
+* django-autoload (or clone it)
+* django-dbindexer (or clone it)
+* django-testapp (or clone it)
 
 Unzip everything.
 
@@ -23,19 +23,19 @@ The django-testapp folder contains a sample project to get you started. If you w
 
 Copy the following folders into your project (e.g., django-testapp):
 
-    django-nonrel/django => <project>/django
-    djangotoolbox/djangotoolbox => <project>/djangotoolbox
-    django-autoload/autoload => <project>/autoload
-    django-dbindexer/dbindexer => <project>/dbindexer
-    djangoappengine => <project>/djangoappengine
+* django-nonrel/django => <project>/django
+* djangotoolbox/djangotoolbox => <project>/djangotoolbox
+* django-autoload/autoload => <project>/autoload
+* django-dbindexer/dbindexer => <project>/dbindexer
+* djangoappengine => <project>/djangoappengine
 
 That's it. Your project structure should look like this:
 
-    <project>/django
-    <project>/djangotoolbox
-    <project>/autoload
-    <project>/dbindexer
-    <project>/djangoappengine
+* <project>/django
+* <project>/djangotoolbox
+* <project>/autoload
+* <project>/dbindexer
+* <project>/djangoappengine
 
 Alternatively, you can of course clone the respective repositories and create symbolic links instead of copying the folders to your project. That might be easier if you have a lot of projects and don't want to update each one manually.
 
@@ -61,56 +61,56 @@ Field types
 
 All Django field types are fully supported except for the following:
 
-    ImageField
-    ManyToManyField
+* ImageField
+* ManyToManyField
 
 The following Django field options have no effect on App Engine:
 
-    unique
-    unique_for_date
-    unique_for_month
-    unique_for_year
+* unique
+* unique_for_date
+* unique_for_month
+* unique_for_year
 
 Additionally djangotoolbox provides non-Django field types in djangotoolbox.fields which you can use on App Engine or other non-relational databases. These are
 
-    ListField
-    BlobField
+* ListField
+* BlobField
 
 The following App Engine properties can be emulated by using a CharField in Django-nonrel:
 
-    CategoryProperty
-    LinkProperty
-    EmailProperty
-    IMProperty
-    PhoneNumberProperty
-    PostalAddressProperty
+* CategoryProperty
+* LinkProperty
+* EmailProperty
+* IMProperty
+* PhoneNumberProperty
+* PostalAddressProperty
 
 QuerySet methods
 ^^^^^^^^^^^^^^^^
 
 You can use the following field lookup types on all Fields except on TextField (unless you use indexes) and BlobField
 
-    __exact equal to (the default)
-    __lt less than
-    __lte less than or equal to
-    __gt greater than
-    __gte greater than or equal to
-    __in (up to 500 values on primary keys and 30 on other fields)
-    __range inclusive on both boundaries
-    __startswith needs a composite index if combined with other filters
-    __year
-    __isnull requires django-dbindexer to work correctly on ForeignKey (you don't have to define any indexes for this to work)
+* __exact equal to (the default)
+* __lt less than
+* __lte less than or equal to
+* __gt greater than
+* __gte greater than or equal to
+* __in (up to 500 values on primary keys and 30 on other fields)
+* __range inclusive on both boundaries
+* __startswith needs a composite index if combined with other filters
+* __year
+* __isnull requires django-dbindexer to work correctly on ForeignKey (you don't have to define any indexes for this to work)
 
 Using django-dbindexer all remaining lookup types will automatically work too!
 
 Additionally, you can use
 
-    QuerySet.exclude()
-    Queryset.values() (only efficient on primary keys)
-    Q-objects
-    QuerySet.count()
-    QuerySet.reverse()
-    ...
+* QuerySet.exclude()
+* Queryset.values() (only efficient on primary keys)
+* Q-objects
+* QuerySet.count()
+* QuerySet.reverse()
+* ...
 
 In all cases you have to keep general App Engine restrictions in mind.
 
@@ -139,8 +139,8 @@ Other
 
 Additionally, the following features from App Engine are not supported:
 
-    entity groups (we don't yet have a GAEPKField, but it should be trivial to add)
-    batch puts (it's technically possible, but nobody found the time/need to implement it, yet)
+* entity groups (we don't yet have a GAEPKField, but it should be trivial to add)
+* batch puts (it's technically possible, but nobody found the time/need to implement it, yet)
 
 Indexes
 -------
@@ -201,7 +201,7 @@ from djangoappengine.settings_base import *
 DATABASES['default']['HIGH_REPLICATION'] = True
 
 App Engine for Business
---------------------===
+-----------------------
 
 In order to use manage.py remote with the googleplex.com domain you need to add the following to the top of your settings.py:
 
