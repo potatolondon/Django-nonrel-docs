@@ -34,5 +34,5 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   django-nonrel
+   overview
    djangoappengine

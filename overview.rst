@@ -1,5 +1,5 @@
-Django nonrel
-=============
+Overview
+========
 
 Django-nonrel is an independent branch of Django that adds NoSQL
 database support to the ORM. The long-term goal is to add NoSQL
