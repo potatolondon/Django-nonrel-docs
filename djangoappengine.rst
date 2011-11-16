@@ -10,12 +10,19 @@ Make sure you've installed the App Engine SDK. On Windows simply use the default
 
 Download the following zip files:
 
-* django-nonrel (or clone it)
-* djangoappengine (or clone it)
-* djangotoolbox (or clone it)
-* django-autoload (or clone it)
-* django-dbindexer (or clone it)
-* django-testapp (or clone it)
+* `django-nonrel`_ (or clone it)
+* `djangoappengine`_ (or clone it)
+* `djangotoolbox`_ (or clone it)
+* `django-autoload`_ (or clone it)
+* `django-dbindexer`_ (or clone it)
+* `django-testapp`_ (or clone it)
+
+.. _django-nonrel: http://bitbucket.org/wkornewald/django-nonrel/get/tip.zip
+.. _djangoappengine: http://bitbucket.org/wkornewald/djangoappengine/get/tip.zip
+.. _djangotoolbox: http://bitbucket.org/wkornewald/djangotoolbox/get/tip.zip
+.. _django-autoload: http://bitbucket.org/twanschik/django-autoload/get/tip.zip
+.. _django-dbindexer: http://bitbucket.org/wkornewald/django-dbindexer/get/tip.zip
+.. _django-testapp: http://bitbucket.org/wkornewald/django-testapp/get/tip.zip
 
 Unzip everything.
 
