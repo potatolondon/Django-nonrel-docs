@@ -37,3 +37,4 @@ Contents
    overview
    djangoappengine
    djangotoolbox
+   django_autoload
